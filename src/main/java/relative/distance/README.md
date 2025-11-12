@@ -27,17 +27,27 @@ You will be given an input containing all parent names and their children.
 ## Example
 
 Given the following family tree:
-  ┌──────────┐            ┌──────────┐     ┌───────────┐
-  │  Helena  │            │  Erdős   ├─────┤  Shusaku  │
-  └───┬───┬──┘            └─────┬────┘     └────┬──────┘
-  ┌───┘   └───────┐             └───────┬───────┘
-┌─┴───────┐ ┌─────┴─┐             ┌─────┴─────┐
-│ Isla    ├─┤ Tariq │             │   Kevin   │
-└────┬────┘ └────┬──┘             └───────────┘
-     │           │
-┌────┴────┐ ┌────┴───┐
-│   Uma   │ │ Morphy │
-└─────────┘ └────────┘
+graph TD
+    
+    Helena["Helena"]
+    Erdos["Erdős"]
+    Shusaku["Shusaku"]
+    Isla["Isla"]
+    Tariq["Tariq"]
+    Uma["Uma"]
+    Kevin["Kevin"]
+    Morphy["Morphy"]
+
+    Helena --> Isla
+    Helena --> Tariq
+
+    Erdos --> Shusaku
+
+    Isla --> Uma
+    Tariq --> Morphy
+
+    Shusaku --> Kevin
+
 
 
 
