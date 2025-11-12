@@ -27,8 +27,9 @@ You will be given an input containing all parent names and their children.
 ## Example
 
 Given the following family tree:
-graph TD
-    
+```mermaid
+flowchart TD
+
     Helena["Helena"]
     Erdos["Erdős"]
     Shusaku["Shusaku"]
@@ -42,13 +43,11 @@ graph TD
     Helena --> Tariq
 
     Erdos --> Shusaku
+    Shusaku --> Kevin
 
     Isla --> Uma
     Tariq --> Morphy
-
-    Shusaku --> Kevin
-
-
+```
 
 
 ### Sample relationships
